@@ -1,6 +1,5 @@
 server:
   port: 1410
-
 spring:
   profiles:
     active: loadInitialData
@@ -12,3 +11,14 @@ spring:
   h2:
     console:
       enabled: true
+  mail:
+    host: "sandbox.smtp.mailtrap.io"
+    port: 1800
+    username: "sa"
+    password: "password"
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
